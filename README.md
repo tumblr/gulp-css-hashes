@@ -1,6 +1,6 @@
 # gulp-css-hashes
 
-That nifty gulp plugin parses stylesheets and appends checksums for images and fonts referenced in that stylesheet using `url(...)`.
+This nifty gulp plugin parses stylesheets and appends checksums for images and fonts referenced in that stylesheet using `url(...)`.
 The purpose of this plugin is to make sure that when you update an asset you are referencing from CSS, that updated version is requested on the client.
  
 ### Options
