@@ -2,12 +2,12 @@
 
 This nifty gulp plugin parses stylesheets and appends checksums for images and fonts referenced in that stylesheet using `url(...)`.
 The purpose of this plugin is to make sure that when you update an asset you are referencing from CSS, that updated version is requested on the client.
- 
+
 ### Options
 
 List of available options:
 
-#### `assetPath`
+#### `assetsPath`
 Type: `String`
 Default value: `www`
 
@@ -17,7 +17,7 @@ Relative path that points to where images are located. That path will be used to
 Type: `Bool`
 Default value: `false`
 
-When set to false, plugin will error if it tries to read a file that CSS references, but that file does not exist. Change this to `true` to log only in those cases. 
+When set to false, plugin will error if it tries to read a file that CSS references, but that file does not exist. Change this to `true` to log only in those cases.
 
 #### `hashableExtensions`
 Type: `Array`
@@ -29,7 +29,7 @@ Array of strings with file extensions of files that need to be processed.
 
 ```javascript
     const gulpCssHashes = require('gulp-css-hashes');
-    
+
     gulp.src('path/to/source/css')
         .pipe(gulpCssHashes())
         .pipe(gulp.dest('path/to/destination'));
@@ -41,7 +41,7 @@ Feel free to open issue on github if you encounter a bug.
 
 ### License
 
-Copyright 2016 Tumblr Inc.
+Copyright 2016-2019 Tumblr Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
